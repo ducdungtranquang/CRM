@@ -1,0 +1,42 @@
+.main__control {
+    justify-content: space-between;
+    row-gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main__control_select {
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 15px;
+}
+
+.select_item {
+    padding: 5px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+    gap: 5px;
+    width: calc(100% /3 - 15px);
+    justify-content: space-between;
+}
+
+.select_item_time {
+    width: fit-content !important;
+    flex-wrap: wrap;
+}
+
+.select_item label {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+    color: #474747;
+    white-space: nowrap;
+}
+
+.select_item input[type=date] {
+    font-size: 14px;
+    line-height: 16px;
+}
+
+/* .input_item_time {} */
