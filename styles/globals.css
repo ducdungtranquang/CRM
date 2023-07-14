@@ -181,11 +181,18 @@ svg {
 /* Custom table Antd */
 .custom_table {
   margin-top: 40px;
+  position: relative;
 }
 
 tr>th {
   background-color: #4C5BD4 !important;
   color: #fff !important;
+  text-align: center !important;
+  font-size: 16px !important;
+}
+
+tr {
+  text-align: center !important;
 }
 
 .action_table {
@@ -196,4 +203,30 @@ tr>th {
   position: relative;
   display: flex;
   align-items: center;
+}
+
+.custom_table .ant-table-pagination {
+  position: relative !important;
+}
+
+.ant-pagination-options {
+  position: absolute;
+  left: 0;
+  display: none !important;
+}
+
+.show_item {
+  padding: 7.6px 15px;
+  background: #FFFFFF;
+  border: 1px solid #CCCCCC;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 8px rgb(0 0 0 / 16%);
+  border-radius: 10px;
+  margin-left: 5px;
+}
+
+.main__footer{
+  position: absolute;
+  bottom: 0;
+  width: 50%;
 }

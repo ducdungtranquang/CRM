@@ -3,7 +3,7 @@ export const HOST = "http://localhost:3001/"
 export const sidebar_button_group = [
   {
     img_link: "https://crm.timviec365.vn/assets/icons/home.svg",
-    link: `${HOST}`,
+    link: `/`,
     content: "Trang chủ",
   },
   {

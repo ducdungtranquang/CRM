@@ -9,7 +9,7 @@ export default function TextEditor({ title = null, className }: any) {
   useEffect(() => {
     editorRef.current = {
       CKEditor: require("@ckeditor/ckeditor5-react").CKEditor,
-      ClassicEditor: require("../../ckeditor5-38.1.0-d2lcbdio1ift"),
+      ClassicEditor: require("../../ckeditor5-38.1.0-8s19z4i3h1a5"),
     };
     setEditorLoaded(true);
   }, []);

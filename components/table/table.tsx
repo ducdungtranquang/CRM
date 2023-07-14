@@ -22,6 +22,11 @@ const columns: ColumnsType<DataType> = [
     width: 380,
     dataIndex: "age",
     key: "age",
+    render : ()=>(
+        <div className="cell_hover">
+            {"Tên chính sách giá"}
+        </div>
+    )
   },
   {
     title: "Đối tượng",
@@ -102,6 +107,21 @@ const TableData: React.FC = () => (
       bordered
       scroll={{ x: 1500, y: 300 }}
     />
+    <div className="main__footer flex_between" id="">
+      <div className="show_number_item">
+        <b>Hiển thị:</b>
+        <select className="show_item">
+          <option value={10}>10 bản ghi trên trang</option>
+          <option value={20}>20 bản ghi trên trang</option>
+          <option value={30}>30 bản ghi trên trang</option>
+          <option value={40}>40 bản ghi trên trang</option>
+          <option value={50}>50 bản ghi trên trang</option>
+        </select>
+      </div>
+      <div className="total">
+        Tổng số: <b>100</b> Tiềm năng
+      </div>
+    </div>
   </div>
 );
 
