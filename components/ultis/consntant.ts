@@ -210,3 +210,79 @@ export const dataOptions = [
     data: ["XYZ", "ABC",]
   }
 ]
+
+export const dataActionPotential = [
+  {
+    link: "",
+    name: "Gọi điện",
+    img: "bi bi-telephone",
+    type: "call",
+  },
+  {
+    link: "",
+    name: "Chọn vào chiến dịch",
+    img: 'bi bi-check-square',
+    type: "",
+  },
+  {
+    link: "",
+    name: "Email marketing",
+    img: `bi bi-envelope`,
+    type: "",
+  },
+  {
+    link: "",
+    name: "Gửi sms",
+    img: `bi bi-chat-left-dots`,
+    type: "",
+  },
+  {
+    link: "",
+    name: "Chia sẻ",
+    img: `bi bi-reply-fill`,
+    type: "",
+  },
+  {
+    link: "",
+    name: "Bàn giao công việc",
+    img: `bi bi-bag`,
+    type: "",
+  },
+  {
+    link: "",
+    name: "Nhân bản",
+    img: `bi bi-back`,
+    type: "",
+  },
+  {
+    link: "",
+    name: "Kiểm tra trùng",
+    img: `bi bi-search`,
+    type: "",
+  },
+  {
+    link: "",
+    name: "Gộp trùng",
+    img: `bi bi-share`,
+    type: "",
+  },
+  {
+    link: "",
+    name: "Chuyển đổi",
+    img: `bi bi-arrow-left-right`,
+    type: "",
+  },
+  {
+    link: "",
+    name: "Chỉnh Sửa",
+    img: `bi bi-pencil-square`,
+    type: "",
+  },
+  {
+    link: "",
+    name: "Xóa",
+    img: `bi bi-trash3`,
+    type: "",
+  },
+
+]

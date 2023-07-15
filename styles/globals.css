@@ -172,11 +172,46 @@ svg {
   align-items: center;
 }
 
+.flex_align_center_item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
 .flex_between {
   display: flex;
   justify-content: space-between;
 }
 
+#start_time {
+  border: 0;
+}
+
+#end_time {
+  border: 0;
+}
+
+.flex-start-btn {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  column-gap: 5px;
+  white-space: nowrap;
+  padding: 5px 3px;
+  align-items: center;
+  font-size: 14px;
+  line-height: 16px;
+  color: #474747 !important;
+  font-family: 'Roboto-Medium';
+  height: auto !important;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+
+/* Custom Input File */
+/* --------- */
 
 /* Custom table Antd */
 .custom_table {
@@ -209,6 +244,11 @@ tr {
   position: relative !important;
 }
 
+.ant-table-cell {
+  height: 50px !important;
+  padding: 0 !important;
+}
+
 .ant-pagination-options {
   position: absolute;
   left: 0;
@@ -225,8 +265,54 @@ tr {
   margin-left: 5px;
 }
 
-.main__footer{
+.main__footer {
   position: absolute;
   bottom: 0;
   width: 50%;
+}
+
+.customStep {
+  width: 55%;
+  margin: auto;
+}
+
+.ant-steps-item-tail::after {
+  background-color: black !important;
+}
+
+.ant-steps-item-icon {
+  border: 1px solid black !important;
+  background-color: white !important;
+  width: 22px !important;
+  height: 22px !important;
+  outline: 1px;
+  position: relative;
+}
+
+.ant-steps-item-icon .ant-steps-icon {
+  top: -6px !important;
+}
+
+:where(.css-dev-only-do-not-override-1m62vyb).ant-steps .ant-steps-item-process .ant-steps-item-icon {
+  background-color: #1677ff !important;
+}
+
+.ant-steps-item-description {
+  color: black !important;
+}
+
+/*  */
+
+@media (max-width: 912px) {
+  .main__footer {
+    flex-direction: column;
+    height: 80px;
+    bottom: -30px;
+    justify-content: space-around;
+    padding-bottom: 10px;
+  }
+}
+
+.opacity {
+  opacity: .5;
 }

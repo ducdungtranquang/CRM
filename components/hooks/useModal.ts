@@ -19,10 +19,9 @@ const useModal = (className: any | string, targetIcon: any) => {
     // if (isOpen) return
     const handleClickOutside = (e: any) => {
       if (!className) return
-      const target = document?.querySelector(`.${targetIcon}`);
       const parentNode = document?.querySelector(`.${className}`);
-      if (!parentNode?.contains(e.target) && !targetIcon?.some((item: any) => item === e.target.getAttribute("class"))) {
-        closeModal();
+      if (!parentNode?.contains(e.target) && (!targetIcon?.some((item: any) => item === e.target.getAttribute("class")))) {
+        setIsOpen(false)
       }
     };
 

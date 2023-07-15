@@ -1,5 +1,5 @@
 import React from "react";
-import { Table } from "antd";
+import { Table, Tooltip } from "antd";
 import type { ColumnsType } from "antd/es/table";
 import { TableRowSelection } from "antd/es/table/interface";
 
@@ -22,11 +22,11 @@ const columns: ColumnsType<DataType> = [
     width: 380,
     dataIndex: "age",
     key: "age",
-    render : ()=>(
-        <div className="cell_hover">
-            {"Tên chính sách giá"}
-        </div>
-    )
+    render: (data) => (
+      <Tooltip title={data}>
+        <span>{data}</span>
+      </Tooltip>
+    ),
   },
   {
     title: "Đối tượng",
@@ -61,14 +61,13 @@ const columns: ColumnsType<DataType> = [
   {
     title: "Chức năng",
     key: "operation",
-    fixed: "right",
     width: 100,
-    render: () => (
-      <button className="action_table">
-        <img src="https://crm.timviec365.vn/assets/img/customer/3_cham.png" />
-        Thao tác
-      </button>
-    ),
+    // render: () => (
+    //   <button className="action_table">
+    //     <img src="https://crm.timviec365.vn/assets/img/customer/3_cham.png" />
+    //     Thao tác
+    //   </button>
+    // ),
   },
 ];
 
@@ -98,7 +97,7 @@ for (let i = 0; i < 100; i++) {
   });
 }
 
-const TableData: React.FC = () => (
+const TableDataPotential: React.FC = ({ dataTable }: any) => (
   <div className="custom_table">
     <Table
       columns={columns}
@@ -119,10 +118,10 @@ const TableData: React.FC = () => (
         </select>
       </div>
       <div className="total">
-        Tổng số: <b>100</b> Tiềm năng
+        Tổng số: <b>{data.length}</b> Tiềm năng
       </div>
     </div>
   </div>
 );
 
-export default TableData;
+export default TableDataPotential;
